@@ -1,0 +1,99 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-family: helvetica, arial;
+  font-size: 32px;
+  text-align: center;
+  color: #405060;
+  margin-bottom: 15px
+}
+
+h2 {
+  background-color: #999999;
+  margin: 0;
+  width: 150px;
+  float: right;
+  padding: 5px;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+h2#titulo1 {
+  background-color: #cd5b45;
+}
+
+h2#titulo2 {
+  background-color: #5f9ea0;
+}
+
+h2#titulo3 {
+  background-color: #ffbf00;
+}
+
+h2#titulo1, h2#titulo2, h2#titulo3 {
+  border-left: solid 2px #405060;
+  border-bottom: solid 2px #405060;
+}
+
+p {
+  float: left;
+  clear: both;
+  margin: 10px 30px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+
+}
+
+.box, .box3 {
+  border: 2px solid #405060;
+  background-color: #708090;
+  height: 190px;
+  margin: 10px;
+  overflow: auto;
+}
+
+/* Large devices only */
+
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    float: left;
+  }
+  .col-lg-3 {
+    width: 33%;
+  }
+}
+
+/* Medium devices only */
+
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 950px){
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .box {
+    margin-bottom: 10px;
+  }
+}
